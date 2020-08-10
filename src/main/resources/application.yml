@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: mnKafkaTracing
+kafka.bootstrap.servers: localhost:9092
+tracing:
+  zipkin:
+    enabled: true
+    http:
+      url: http://localhost:9411
+    sampler:
+      probability: 1
